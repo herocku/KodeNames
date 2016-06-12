@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>KodeNames</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="styles/styles.css?v=1.0">
+</head>
+
+<body>
+  <div>
+    <div id='header'>
+      <input type="text" id="seed" placeholder="seed" size="8" autofocus>
+      <button onclick="fire()">Play Game</button>
+      <span id="team"></span>
+      <span id="first"></span>  
+
+      <span id="word-counts">
+      </span>
+
+      <span>
+        <button id="spymaster" onclick="spyMaster()">I am SpyMaster</button>
+        <span id="confirmText">confirm popup?</span>
+        <input type="checkbox" id="confirm" checked>
+        <span id="google_translate_element"></span>
+      </span>
+    </div>
+  </div>
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-48676831-6'}, 'google_translate_element');
+  }
+  </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
+  <div id="board"></div>
+  <script src="dist/js/all.min.js"></script>
+  <script src="dist/styles//styles.css"></script>
+  
+</body>
+</html>
